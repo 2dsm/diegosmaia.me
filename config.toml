@@ -1,0 +1,43 @@
+baseURL = "http://diegosmaia.me/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "en"
+language = "en"
+theme = "vncnt-hugo"
+title = "Diego Maia . Web site"
+
+
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Diego Maia"
+  email = "diegosmaia@gmail.com"
+  description = "Landing Page"
+  bio = "Pai do Miguel,\n analista de infraestrutura e aprendiz DevOps."
+  avatar = "img/avatar.jpg"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    github = "https://github.com/2dsm"
+    linkedin = "https://linkedin.com/in/diegosmaia/"
+
+
+#    instagram = "https://instagram.com/jdoe"
+#    twitter = "https://twitter.com/jdoe"
+#    ello = ""
